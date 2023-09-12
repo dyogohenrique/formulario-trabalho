@@ -47,7 +47,7 @@ function Form() {
             />
 
             <InputRadio
-                name="RadioGrupo"
+                name="Sexo"
                 options={options}
                 selectOption={selectedOption}
                 onChange={handleOptionChange}
