@@ -1,0 +1,15 @@
+.radio {
+    margin-bottom: 1em;
+}
+
+.radio>label {
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.options {
+    margin-right: 2em;
+}
+.options input {
+    margin-right: .3em;
+}

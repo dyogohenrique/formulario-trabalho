@@ -4,11 +4,9 @@ import Form from "./components/layout/Form";
 
 function App() {
   return (
-    <div>
       <Container>
         <Form />
       </Container>
-    </div>
   );
 }
 

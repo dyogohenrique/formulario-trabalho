@@ -19,17 +19,31 @@ function Form() {
     };
 
     const options = [
-        {value: "option1", label: "Opção 1"},
-        {value: "option2", label: "Opção 2"}
+        {value: "Masculino", label: "Masculino"},
+        {value: "Feminino", label: "Feminino"}
     ];
 
     return (
         <form onSubmit={submit} className={styles.form}>
             <Input
                 type="text"
-                text="Um texto"
-                name="texto"
-                placeholder="Texto"
+                text="Nome"
+                name="nome"
+                placeholder="Digite o seu nome"
+            />
+
+            <Input
+                type="text"
+                text="Sobrenome"
+                name="nome"
+                placeholder="Digite o seu sobrenome"
+            />
+
+            <Input 
+                type="email"
+                text="E-mail"
+                name="email"
+                placeholder="exemplo@ex.com"
             />
 
             <InputRadio

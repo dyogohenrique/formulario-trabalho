@@ -1,5 +1,8 @@
 .container {
-    max-width: 450px;
+    width:850px;
+    max-width: 90vw;
     margin: 0 auto;
-    padding: 3em;
+    padding: 2em;
+
+    background-color: #f3f3f3;
 }

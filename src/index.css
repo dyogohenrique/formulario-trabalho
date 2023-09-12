@@ -3,7 +3,14 @@
   margin: 0;
 }
 
-html, body, #root {
-  background-color: #EFEFEF;
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+}
+
+body {
+  
+  background-image: linear-gradient(to left, #237aa3, #47abd9);
 }
