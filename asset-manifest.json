@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/formulario-trabalho/static/css/main.0808a073.css",
+    "main.js": "/formulario-trabalho/static/js/main.fe0ce825.js",
+    "static/js/787.f0e9f340.chunk.js": "/formulario-trabalho/static/js/787.f0e9f340.chunk.js",
+    "index.html": "/formulario-trabalho/index.html",
+    "main.0808a073.css.map": "/formulario-trabalho/static/css/main.0808a073.css.map",
+    "main.fe0ce825.js.map": "/formulario-trabalho/static/js/main.fe0ce825.js.map",
+    "787.f0e9f340.chunk.js.map": "/formulario-trabalho/static/js/787.f0e9f340.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0808a073.css",
+    "static/js/main.fe0ce825.js"
+  ]
+}
