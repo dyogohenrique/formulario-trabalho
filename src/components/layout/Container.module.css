@@ -5,4 +5,9 @@
     padding: 2em;
 
     background-color: #f3f3f3;
+
+    border: 1px solid #000;
+    border-radius: 6px;
+
+    box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.599);
 }

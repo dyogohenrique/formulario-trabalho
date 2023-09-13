@@ -12,7 +12,7 @@ function Form() {
         e.preventDefault();
     }
 
-    const [selectedOption, setSelectedOption] = useState("option1");
+    const [selectedOption, setSelectedOption] = useState("Masculino");
 
     const handleOptionChange = (e) => {
         setSelectedOption(e.target.value);
@@ -51,6 +51,13 @@ function Form() {
                 options={options}
                 selectOption={selectedOption}
                 onChange={handleOptionChange}
+            />
+
+            <Input
+                type="date"
+                text="Data de nascimento"
+                name="data_nascimento"
+                customClass="date"
             />
 
             <SubmitButton

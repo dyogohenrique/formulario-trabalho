@@ -10,9 +10,9 @@ import styles from "./Input.module.css";
  * @param value O valor do input
  * @returns retorna o input
  */
-function Input({ type, text, name, placeholder, value }) {
+function Input({ type, text, name, placeholder, value, customClass }) {
     return (
-        <div className={` ${styles.form_control}`}>
+        <div className={` ${styles.form_control} ${styles[customClass]}`}>
             <label htmlFor={name}>{text}</label>
             <input 
                 type={type}
