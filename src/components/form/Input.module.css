@@ -23,3 +23,9 @@
 .date input {
     width: 150px;
 }
+
+@media (min-width: 768px) {
+    .form_control {
+      flex: 1 1 auto;
+    }
+}

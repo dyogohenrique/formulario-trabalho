@@ -1,6 +1,7 @@
 .container {
-    width:850px;
-    max-width: 90vw;
+    width: 70vw;
+    height: auto;
+
     margin: 0 auto;
     padding: 2em;
 
@@ -10,4 +11,6 @@
     border-radius: 6px;
 
     box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.599);
+
+    transition: width 300ms ease, height 300ms ease;
 }

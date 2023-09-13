@@ -25,19 +25,20 @@ function Form() {
 
     return (
         <form onSubmit={submit} className={styles.form}>
-            <Input
-                type="text"
-                text="Nome"
-                name="nome"
-                placeholder="Digite o seu nome"
-            />
-
-            <Input
-                type="text"
-                text="Sobrenome"
-                name="nome"
-                placeholder="Digite o seu sobrenome"
-            />
+            <div className={styles.input_container}>
+                <Input
+                    type="text"
+                    text="Nome"
+                    name="nome"
+                    placeholder="Digite o seu nome"
+                />
+                <Input
+                    type="text"
+                    text="Sobrenome"
+                    name="nome"
+                    placeholder="Digite o seu sobrenome"
+                />
+            </div>
 
             <Input 
                 type="email"
@@ -46,23 +47,27 @@ function Form() {
                 placeholder="exemplo@ex.com"
             />
 
-            <InputRadio
-                name="Sexo"
-                options={options}
-                selectOption={selectedOption}
-                onChange={handleOptionChange}
-            />
+            <div className={styles.input_container}>
+                <InputRadio
+                    name="Sexo"
+                    options={options}
+                    selectOption={selectedOption}
+                    onChange={handleOptionChange}
+                />
+                <Input
+                    type="date"
+                    text="Data de nascimento"
+                    name="data_nascimento"
+                    customClass="date"
+                />
+            </div>
 
-            <Input
-                type="date"
-                text="Data de nascimento"
-                name="data_nascimento"
-                customClass="date"
-            />
-
-            <SubmitButton
-                text="Enviar"
-            />
+            <div className={styles.button_container}>
+                <SubmitButton
+                    text="Enviar"
+                />
+                <SubmitButton text="Apagar tudo"/>
+            </div>
         </form>
     );
 }
