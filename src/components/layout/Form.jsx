@@ -13,10 +13,13 @@ function Form() {
         e.preventDefault();
     }
 
+
+    // Input Rádio
     const [selectedOption, setSelectedOption] = useState("Masculino");
 
     const handleOptionChange = (e) => {
         setSelectedOption(e.target.value);
+        
     };
 
     const options = [
@@ -24,20 +27,23 @@ function Form() {
         {value: "Feminino", label: "Feminino"}
     ];
 
+
     return (
-        <form onSubmit={submit} className={styles.form}>
+        <form onSubmit={submit} className={styles.form} id="meuFormulario">
             <div className={styles.input_container}>
                 <Input
                     type="text"
                     text="Nome"
                     name="nome"
                     placeholder="Digite o seu nome"
+
                 />
                 <Input
                     type="text"
                     text="Sobrenome"
                     name="nome"
                     placeholder="Digite o seu sobrenome"
+
                 />
             </div>
 
@@ -53,6 +59,7 @@ function Form() {
                     text="Data de nascimento"
                     name="data_nascimento"
                     customClass="date"
+
                 />
             </div>
 
@@ -64,6 +71,7 @@ function Form() {
                     name="email"
                     placeholder="exemplo@ex.com"
                     customClass="email"
+
                 />
                 
                 <Input
@@ -72,12 +80,14 @@ function Form() {
                     name="numCelular"
                     customClass="num"
                     placeholder=""
-                    />
+
+                />
                 <Input
                     type="number"
                     text="Nº de Telefone Fixo"
                     name="numFixo"
                     customClass="num"
+
                 />
             </div>
             
@@ -89,24 +99,28 @@ function Form() {
                     text="CEP"
                     name="cep"
                     customClass="endereco"
+
                 />
                 <Input
                     type="text"
                     text="Bairro"
                     name="bairro"
                     customClass="endereco"
+
                 />
                 <Input
                     type="text"
                     text="Rua"
                     name="rua"
                     customClass="endereco"
+
                 />
                 <Input
                     type="number"
                     text="Nº"
                     name="numero"
                     customClass="endereco"
+
                 />
             </div>
 
@@ -116,6 +130,8 @@ function Form() {
                 />
                 <SubmitButton 
                     text="Apagar tudo"
+                    id="apagar_formulario"
+                    name="apagar_formulario"
                 />
                 <Link to="/resultados">
                     <SubmitButton

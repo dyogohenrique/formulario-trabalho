@@ -6,10 +6,17 @@ import styles from './SubmitButton.module.css';
  * @param text Texto que aparece dentro do botão 
  * @returns retorna o botão de submit
  */
-function SubmitButton({ text }) {
+function SubmitButton({ text, name, handleOnchange,customClass }) {
     return(
         <div>
-            <button className={styles.btn}>{text}</button>
+            <button 
+                className={`${styles.btn} ${styles[customClass]}`}
+                name={name} 
+                id={name}
+                onClick={handleOnchange}
+            >
+            {text}
+            </button>
         </div>
     );
 }
