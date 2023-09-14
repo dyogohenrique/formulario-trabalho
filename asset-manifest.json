@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/formulario-trabalho/static/css/main.02e1203b.css",
-    "main.js": "/formulario-trabalho/static/js/main.535d86fe.js",
+    "main.css": "/formulario-trabalho/static/css/main.947ea4ac.css",
+    "main.js": "/formulario-trabalho/static/js/main.d154c7e8.js",
     "static/js/787.f0e9f340.chunk.js": "/formulario-trabalho/static/js/787.f0e9f340.chunk.js",
     "index.html": "/formulario-trabalho/index.html",
-    "main.02e1203b.css.map": "/formulario-trabalho/static/css/main.02e1203b.css.map",
-    "main.535d86fe.js.map": "/formulario-trabalho/static/js/main.535d86fe.js.map",
+    "main.947ea4ac.css.map": "/formulario-trabalho/static/css/main.947ea4ac.css.map",
+    "main.d154c7e8.js.map": "/formulario-trabalho/static/js/main.d154c7e8.js.map",
     "787.f0e9f340.chunk.js.map": "/formulario-trabalho/static/js/787.f0e9f340.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02e1203b.css",
-    "static/js/main.535d86fe.js"
+    "static/css/main.947ea4ac.css",
+    "static/js/main.d154c7e8.js"
   ]
 }
