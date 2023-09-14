@@ -40,13 +40,6 @@ function Form() {
                 />
             </div>
 
-            <Input 
-                type="email"
-                text="E-mail"
-                name="email"
-                placeholder="exemplo@ex.com"
-            />
-
             <div className={styles.input_container}>
                 <InputRadio
                     name="Sexo"
@@ -62,14 +55,73 @@ function Form() {
                 />
             </div>
 
+
+            <div className={styles.input_Num_container}>
+                <Input 
+                    type="email"
+                    text="E-mail"
+                    name="email"
+                    placeholder="exemplo@ex.com"
+                    customClass="email"
+                />
+                
+                <Input
+                    type="number"
+                    text="Nº de Telefone Celular"
+                    name="numCelular"
+                    customClass="num"
+                    />
+                <Input
+                    type="number"
+                    text="Nº de Telefone Fixo"
+                    name="numFixo"
+                    customClass="num"
+                />
+            </div>
+            
+
+
+            <div className={styles.endereco_container}>
+                <Input
+                    type="text"
+                    text="CEP"
+                    name="cep"
+                    customClass="endereco"
+                />
+                <Input
+                    type="text"
+                    text="Bairro"
+                    name="bairro"
+                    customClass="endereco"
+                />
+                <Input
+                    type="text"
+                    text="Rua"
+                    name="rua"
+                    customClass="endereco"
+                />
+                <Input
+                    type="number"
+                    text="Nº"
+                    name="numero"
+                    customClass="endereco"
+                />
+            </div>
+
             <div className={styles.button_container}>
                 <SubmitButton
                     text="Enviar"
                 />
-                <SubmitButton text="Apagar tudo"/>
+                <SubmitButton 
+                    text="Apagar tudo"
+                />
+                <SubmitButton 
+                    text="Resultados"
+                />
             </div>
         </form>
     );
 }
+
 
 export default Form;

@@ -10,7 +10,7 @@ import styles from "./Input.module.css";
  * @param value O valor do input
  * @returns retorna o input
  */
-function Input({ type, text, name, placeholder, value, customClass }) {
+function Input({ type, text, name, placeholder, value, customClass, max, min, minLength, maxLength  }) {
     return (
         <div className={` ${styles.form_control} ${styles[customClass]}`}>
             <label htmlFor={name}>{text}</label>
@@ -20,6 +20,10 @@ function Input({ type, text, name, placeholder, value, customClass }) {
                 id={name}
                 placeholder={placeholder}
                 value={value}
+                min={min}
+                max={max}
+                minLength={minLength}
+                maxLength={maxLength}
                 required
             />
         </div>

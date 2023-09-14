@@ -1,8 +1,9 @@
 .container {
     width: 70vw;
-    height: auto;
 
-    margin: 0 auto;
+
+
+    margin: 2em 0;
     padding: 2em;
 
     background-color: #f3f3f3;
