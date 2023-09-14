@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import styles from "./Form.module.css";
@@ -70,6 +71,7 @@ function Form() {
                     text="Nº de Telefone Celular"
                     name="numCelular"
                     customClass="num"
+                    placeholder=""
                     />
                 <Input
                     type="number"
@@ -115,9 +117,11 @@ function Form() {
                 <SubmitButton 
                     text="Apagar tudo"
                 />
-                <SubmitButton 
-                    text="Resultados"
-                />
+                <Link to="/resultados">
+                    <SubmitButton
+                        text="Resultados"
+                    />
+                </Link>
             </div>
         </form>
     );
