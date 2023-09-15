@@ -8,22 +8,17 @@ import SubmitButton from "../form/SubmitButton"
 import InputRadio from "../form/InputRadio";
 
 function Form({ handleSubmit, personData }) {
-    
-    const[person, setPerson] = useState(personData || {})
-
-    const submit = (e) => {
-        e.preventDefault();
-        const updatedPerson = {
-            ...person,
-            Sexo: selectedOption
-        };
-        // console.log(updatedProject);
-        handleSubmit(updatedPerson);
-    }
-    
 
     function handleChange(e) {
-        setPerson({...person, [e.target.name]: e.target.value});
+        const {name, value} = e.target;
+        let idade = person.idade;
+
+        if (name === "data_nascimento") {
+            idade = calcularIdade(value);
+        }
+
+        // setPerson({...person, [e.target.name]: e.target.value});
+        setPerson({...person, [name]:value, idade})
     }
 
     // Input Rádio
@@ -37,6 +32,47 @@ function Form({ handleSubmit, personData }) {
         {value: "Masculino", label: "Masculino"},
         {value: "Feminino", label: "Feminino"}
     ];
+
+    // Calcular a idade
+    function calcularIdade(dataNascimento) {
+
+        //Data do formulario
+        const dataNascimentoArray = dataNascimento.split('-');
+        const anosNascimento = parseInt(dataNascimentoArray[0]);
+        const mesNascimento = parseInt(dataNascimentoArray[1]);
+        const diaNascimento = parseInt(dataNascimentoArray[2]);
+
+        //Data atual
+        const dataAtual = new Date();
+        const anoAtual = dataAtual.getFullYear();
+        const mesAtual = dataAtual.getMonth();
+        const diaAtual = dataAtual.getDate();
+
+        let idade = anoAtual - anosNascimento;
+
+        if (mesAtual < mesNascimento || (mesAtual === mesNascimento && diaAtual < diaNascimento)) {
+            idade--;
+        }
+
+        return idade;
+    }
+
+    //Envia os dados para o "banco de dados"
+    const[person, setPerson] = useState(personData || {})
+
+    const submit = (e) => {
+        e.preventDefault();
+        const updatedPerson = {
+            ...person,
+            Sexo: selectedOption
+        };
+        // console.log(updatedProject);
+        handleSubmit(updatedPerson);
+    }
+
+    function apagarCampos() {
+        
+    }
 
 
     return (

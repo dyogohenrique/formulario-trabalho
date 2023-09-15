@@ -1,5 +1,16 @@
 {
   "people": [
-    
+    {
+      "Sexo": "Masculino",
+      "id": 1
+    },
+    {
+      "Sexo": "Masculino",
+      "id": 2
+    },
+    {
+      "Sexo": "Masculino",
+      "id": 3
+    }
   ]
 }

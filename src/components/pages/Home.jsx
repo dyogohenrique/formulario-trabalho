@@ -1,10 +1,10 @@
-import { redirect, useNavigate } from "react-router-dom"
+// import { redirect, useNavigate } from "react-router-dom"
 
 import Form from "../layout/Form";
 
 function Home() {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   
   //Envia o dados para o "banco de dados"
   function createPost(person) {
