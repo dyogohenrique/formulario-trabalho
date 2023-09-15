@@ -7,19 +7,30 @@ import Input from "../form/Input";
 import SubmitButton from "../form/SubmitButton"
 import InputRadio from "../form/InputRadio";
 
-function Form() {
+function Form({ handleSubmit, projectData }) {
+    
+    const[project, setProject] = useState(projectData || {})
 
     const submit = (e) => {
         e.preventDefault();
+        const updatedProject = {
+            ...project,
+            Sexo: selectedOption // ou outra forma de capturar o sexo
+        };
+        // console.log(updatedProject);
+        handleSubmit(updatedProject);
     }
+    
 
+    function handleChange(e) {
+        setProject({...project, [e.target.name]: e.target.value});
+    }
 
     // Input Rádio
     const [selectedOption, setSelectedOption] = useState("Masculino");
 
     const handleOptionChange = (e) => {
         setSelectedOption(e.target.value);
-        
     };
 
     const options = [
@@ -36,13 +47,15 @@ function Form() {
                     text="Nome"
                     name="nome"
                     placeholder="Digite o seu nome"
+                    handleOnChange={handleChange}
 
                 />
                 <Input
                     type="text"
                     text="Sobrenome"
-                    name="nome"
+                    name="sobrenome"
                     placeholder="Digite o seu sobrenome"
+                    handleOnChange={handleChange}
 
                 />
             </div>
@@ -53,13 +66,14 @@ function Form() {
                     options={options}
                     selectOption={selectedOption}
                     onChange={handleOptionChange}
+                    handleOnChange={handleChange}
                 />
                 <Input
                     type="date"
                     text="Data de nascimento"
                     name="data_nascimento"
                     customClass="date"
-
+                    handleOnChange={handleChange}
                 />
             </div>
 
@@ -71,7 +85,7 @@ function Form() {
                     name="email"
                     placeholder="exemplo@ex.com"
                     customClass="email"
-
+                    handleOnChange={handleChange}
                 />
                 
                 <Input
@@ -80,14 +94,14 @@ function Form() {
                     name="numCelular"
                     customClass="num"
                     placeholder=""
-
+                    handleOnChange={handleChange}
                 />
                 <Input
                     type="number"
                     text="Nº de Telefone Fixo"
                     name="numFixo"
                     customClass="num"
-
+                    handleOnChange={handleChange}
                 />
             </div>
             
@@ -99,28 +113,36 @@ function Form() {
                     text="CEP"
                     name="cep"
                     customClass="endereco"
-
+                    className="cep"
+                    handleOnChange={handleChange}
                 />
+
+                <div className="empty"></div>
+                <div className="empty"></div>
+
                 <Input
                     type="text"
                     text="Bairro"
                     name="bairro"
                     customClass="endereco"
-
+                    className="bairro"
+                    handleOnChange={handleChange}
                 />
                 <Input
                     type="text"
                     text="Rua"
                     name="rua"
                     customClass="endereco"
-
+                    className="rua"
+                    handleOnChange={handleChange}
                 />
                 <Input
                     type="number"
                     text="Nº"
                     name="numero"
                     customClass="endereco"
-
+                    className="num"
+                    handleOnChange={handleChange}
                 />
             </div>
 

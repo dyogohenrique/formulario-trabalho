@@ -25,10 +25,6 @@
     width: 150px;
 }
 
-@media (max-width: 1095px) and (min-width: 768px) {
-
-}
-
 @media (min-width: 768px) {
     .form_control {
         flex: 1 1 auto;
