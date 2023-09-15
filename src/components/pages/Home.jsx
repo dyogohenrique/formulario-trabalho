@@ -7,19 +7,18 @@ function Home() {
   const navigate = useNavigate();
   
   //Envia o dados para o "banco de dados"
-  //substituir todo project por people
-  function createPost(project) {
+  function createPost(person) {
 
-    fetch("http://localhost:5000/peoples", {
+    fetch("http://localhost:5000/people", {
       method: "POST",
       headers: {
         'Content-type': 'application/json',
       },
-      body: JSON.stringify(project),
+      body: JSON.stringify(person),
     }).then((resp) => resp.json())
     .then((data) => {
       console.log(data)
-      //redirect
+
     })
     .catch(err => console.log(err));
 

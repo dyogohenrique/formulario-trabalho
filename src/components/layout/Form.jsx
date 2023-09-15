@@ -7,23 +7,23 @@ import Input from "../form/Input";
 import SubmitButton from "../form/SubmitButton"
 import InputRadio from "../form/InputRadio";
 
-function Form({ handleSubmit, projectData }) {
+function Form({ handleSubmit, personData }) {
     
-    const[project, setProject] = useState(projectData || {})
+    const[person, setPerson] = useState(personData || {})
 
     const submit = (e) => {
         e.preventDefault();
-        const updatedProject = {
-            ...project,
-            Sexo: selectedOption // ou outra forma de capturar o sexo
+        const updatedPerson = {
+            ...person,
+            Sexo: selectedOption
         };
         // console.log(updatedProject);
-        handleSubmit(updatedProject);
+        handleSubmit(updatedPerson);
     }
     
 
     function handleChange(e) {
-        setProject({...project, [e.target.name]: e.target.value});
+        setPerson({...person, [e.target.name]: e.target.value});
     }
 
     // Input Rádio
