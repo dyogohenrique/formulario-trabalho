@@ -15,11 +15,25 @@
     display: flex;
     flex-direction: row;
     gap: 1em;
-  }
+}
   
-  .endereco_container {
-    margin-bottom: 50px;
-  }
+.endereco_container {
+  margin-bottom: 50px;
+}
+
+.aviso {
+  margin-bottom: 2em;
+}
+
+.mask input {
+  padding: .7em;
+  border-radius: 3px;
+  border: 1px solid #000000a8;   
+}
+
+.mask input::placeholder {
+  color: #7b7b7b;
+}
   
   @media (min-width: 770px) {
       .input_container {
@@ -28,8 +42,6 @@
       }
       .input_Num_container {
         flex-direction: row;
-        justify-content: left;
-  
       }
   
       .endereco_container {

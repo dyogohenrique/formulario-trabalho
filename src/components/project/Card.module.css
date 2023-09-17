@@ -1,0 +1,60 @@
+.person_card {
+    padding: 1em;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    min-width: 26%;
+    margin: 0.5%;
+}
+
+.person_card h4 {
+    padding: .4em;
+    font-size: 1.3em;
+}
+
+.person_card p {
+    color: #7a7a7a;
+    margin-bottom: 1em;
+}
+
+.person_card p span {
+    font-weight: bold;
+}
+
+.person_card_actions {
+    margin-top: 1.2em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.person_card_actions a, 
+.person_card_actions button {
+    text-decoration: none;
+    border: 1px solid #222;
+    background-color: #fff;
+    color: #222;
+    font: .9em;
+    cursor: pointer;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+.person_card_actions a {
+    padding: 10px 16px;
+}
+.person_card_actions button {
+    padding: 11px 16px;
+}
+
+.person_card_actions svg {
+    margin-right: .5em;
+}
+
+.person_card_actions a:hover, 
+.person_card_actions button:hover {
+    background-color: #222;
+    color: #237aa3;
+}

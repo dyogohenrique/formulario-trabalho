@@ -24,7 +24,7 @@ function Input({ type, text, name, placeholder, value, customClass, max, min, mi
                 max={max}
                 minLength={minLength}
                 maxLength={maxLength}
-                required={required}
+                required
                 onChange={handleOnChange}
             />
         </div>

@@ -1,5 +1,68 @@
 {
   "people": [
-
+    {
+      "nome": "Jacinto Pinto",
+      "sobrenome": "Aquino Rego",
+      "data_nascimento": "1985-06-05",
+      "idade": 38,
+      "faixaEtaria": "Adulto",
+      "email": "jacinto_pinto@gmail.com",
+      "numCelular": "(69) 99356-4714",
+      "numFixo": "(69) 44711-2354",
+      "cep": "76806-180",
+      "bairro": "Floresta",
+      "rua": "Açai",
+      "numero": "4976",
+      "Sexo": "Masculino",
+      "id": 1
+    },
+    {
+      "nome": "Melbi",
+      "sobrenome": "Lau",
+      "data_nascimento": "1985-07-05",
+      "idade": 38,
+      "faixaEtaria": "Adulto",
+      "email": "meilbi_lau@gmail.com",
+      "numCelular": "(55) 54654-8445",
+      "numFixo": "(56) 44654-5636",
+      "bairro": "Castanheira",
+      "rua": "do Violoncelo",
+      "numero": "385",
+      "cep": "76811-472",
+      "Sexo": "Masculino",
+      "id": 2
+    },
+    {
+      "nome": "Ana",
+      "sobrenome": "Konda",
+      "data_nascimento": "1956-08-05",
+      "idade": 67,
+      "faixaEtaria": "Idosa",
+      "email": "ana_konda@hotmail.com",
+      "numCelular": "(54) 64564-5645",
+      "numFixo": "(56) 16543-1565",
+      "bairro": "Caladinho",
+      "rua": "Jacó Aíres",
+      "numero": "4289",
+      "cep": "76808-208",
+      "Sexo": "Feminino",
+      "id": 3
+    },
+    {
+      "nome": "Maria",
+      "sobrenome": "Martins Carvalho",
+      "data_nascimento": "2010-10-08",
+      "idade": 12,
+      "faixaEtaria": "Criança",
+      "email": "mariamartins@gmail.com",
+      "numCelular": "(56) 45676-8765",
+      "numFixo": "(23) 15656-3545",
+      "cep": "76808-145",
+      "bairro": "Marília",
+      "rua": "Thomaz Alcalde",
+      "numero": "1075",
+      "Sexo": "Feminino",
+      "id": 4
+    }
   ]
 }

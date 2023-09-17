@@ -1,0 +1,26 @@
+.resultado_container {
+    padding: 2em;
+    
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.resultados {
+    flex-wrap: wrap;
+    width: 100%;
+    
+    display: flex;
+    
+    justify-content: flex-start;
+    
+}
+
+.message {
+    display: block;
+    margin: 3em 0;
+}

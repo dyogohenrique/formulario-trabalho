@@ -1,10 +1,10 @@
-// import { redirect, useNavigate } from "react-router-dom"
+import { useState } from "react";
 
-import Form from "../layout/Form";
+import Form from "../project/Form";
+import Message from "../layout/Message";
 
 function Home() {
-
-  // const navigate = useNavigate();
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   
   //Envia o dados para o "banco de dados"
   function createPost(person) {
@@ -18,16 +18,23 @@ function Home() {
     }).then((resp) => resp.json())
     .then((data) => {
       console.log(data)
+      setShowSuccessMessage(true)
 
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+      }, 5000);
     })
     .catch(err => console.log(err));
 
   }
 
   return (
-      <>
+      <div>
+        {showSuccessMessage && (
+          <Message type="success" msg="Dados enviados com sucesso!" />
+        )}
         <Form handleSubmit={createPost}/>
-      </>
+      </div>
   );
 }
 
