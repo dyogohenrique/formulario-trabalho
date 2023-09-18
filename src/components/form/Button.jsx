@@ -1,4 +1,4 @@
-import styles from './SubmitButton.module.css';
+import styles from './Button.module.css';
 
 
 /**
@@ -6,7 +6,7 @@ import styles from './SubmitButton.module.css';
  * @param text Texto que aparece dentro do botão 
  * @returns retorna o botão de submit
  */
-function SubmitButton({ text, name, type, handleOnchange,customClass }) {
+function Button({ text, name, type, handleOnchange,customClass }) {
     return(
         <div>
             <button 
@@ -22,4 +22,4 @@ function SubmitButton({ text, name, type, handleOnchange,customClass }) {
     );
 }
 
-export default SubmitButton;
+export default Button;

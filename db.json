@@ -1,38 +1,6 @@
 {
   "people": [
     {
-      "nome": "Jacinto Pinto",
-      "sobrenome": "Aquino Rego",
-      "data_nascimento": "1985-06-05",
-      "idade": 38,
-      "faixaEtaria": "Adulto",
-      "email": "jacinto_pinto@gmail.com",
-      "numCelular": "(69) 99356-4714",
-      "numFixo": "(69) 44711-2354",
-      "cep": "76806-180",
-      "bairro": "Floresta",
-      "rua": "Açai",
-      "numero": "4976",
-      "Sexo": "Masculino",
-      "id": 1
-    },
-    {
-      "nome": "Melbi",
-      "sobrenome": "Lau",
-      "data_nascimento": "1985-07-05",
-      "idade": 38,
-      "faixaEtaria": "Adulto",
-      "email": "meilbi_lau@gmail.com",
-      "numCelular": "(55) 54654-8445",
-      "numFixo": "(56) 44654-5636",
-      "bairro": "Castanheira",
-      "rua": "do Violoncelo",
-      "numero": "385",
-      "cep": "76811-472",
-      "Sexo": "Masculino",
-      "id": 2
-    },
-    {
       "nome": "Ana",
       "sobrenome": "Konda",
       "data_nascimento": "1956-08-05",
@@ -46,7 +14,23 @@
       "numero": "4289",
       "cep": "76808-208",
       "Sexo": "Feminino",
-      "id": 3
+      "id": 1
+    },
+    {
+      "nome": "Jacinto Pinto",
+      "sobrenome": "Aquino Rego",
+      "data_nascimento": "1985-06-05",
+      "idade": 38,
+      "faixaEtaria": "Adulto",
+      "email": "jacinto_pinto@gmail.com",
+      "numCelular": "(69) 99356-4714",
+      "numFixo": "(69) 44711-2354",
+      "cep": "76806-180",
+      "bairro": "Floresta",
+      "rua": "Açai",
+      "numero": "4976",
+      "Sexo": "Masculino",
+      "id": 2
     },
     {
       "nome": "Maria",
@@ -62,6 +46,22 @@
       "rua": "Thomaz Alcalde",
       "numero": "1075",
       "Sexo": "Feminino",
+      "id": 3
+    },
+    {
+      "nome": "João",
+      "sobrenome": "da Silva",
+      "email": "joao@gmail.com",
+      "data_nascimento": "2017-04-05",
+      "idade": 6,
+      "faixaEtaria": "Criança",
+      "numCelular": "(32) 41231-3512",
+      "numFixo": "(32) 0123-0320",
+      "cep": "52131-231",
+      "bairro": "Bairro",
+      "rua": "Rua",
+      "numero": "1234",
+      "Sexo": "Masculino",
       "id": 4
     }
   ]

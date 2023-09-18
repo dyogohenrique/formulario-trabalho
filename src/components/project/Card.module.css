@@ -2,7 +2,7 @@
     padding: 1em;
     border: 1px solid #7a7a7a;
     border-radius: 5px;
-    min-width: 26%;
+    max-width: 289px;
     margin: 0.5%;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .person_card_actions a, 
-.person_card_actions button {
+.person_card_actions>button {
     text-decoration: none;
     border: 1px solid #222;
     background-color: #fff;
@@ -54,7 +54,29 @@
 }
 
 .person_card_actions a:hover, 
-.person_card_actions button:hover {
+.person_card_actions>button:hover {
     background-color: #222;
+}
+
+.person_card_actions a:hover{
     color: #237aa3;
+    
+}
+.person_card_actions>button:hover {
+    color: #a3233f;
+
+}
+
+.container_imagem img{
+    border-radius: 50%;
+    border: 1.7px solid black;
+
+    width: 100px;
+    height: 100px;
+}
+
+.head {
+    display: flex;
+
+    justify-content: space-between;
 }

@@ -5,7 +5,7 @@ import { useState } from "react";
 import styles from "./Form.module.css";
 
 import Input from "../form/Input";
-import SubmitButton from "../form/SubmitButton"
+import Button from "../form/Button"
 import InputRadio from "../form/InputRadio";
 import Mask from "../form/Mask"
 
@@ -138,7 +138,7 @@ function Form({ handleSubmit, personData }) {
     const initialFormState = {
         nome: "",
         sobrenome: "",
-        data_nascimento: "", // Preencha com a data inicial desejada (por exemplo, "2023-01-01")
+        data_nascimento: "",
         email: "",
         numCelular: "",
         numFixo: "",
@@ -170,9 +170,10 @@ function Form({ handleSubmit, personData }) {
             return; // Não envia os dados se o CEP for inválido
         }
 
-        const phoneNumberPattern = /^\(\d{2}\) \d{5}-\d{4}$/;
+        const telefoneCelularPattern = /^\(\d{2}\) \d{5}-\d{4}$/;
+        const telefoneFixoPattern = /^\(\d{2}\) \d{4}-\d{4}$/;
 
-        if (!phoneNumberPattern.test(person.numCelular) || !phoneNumberPattern.test(person.numFixo)) {
+        if (!telefoneCelularPattern.test(person.numCelular) || !telefoneFixoPattern.test(person.numFixo)) {
             // Pelo menos um dos números de telefone é inválido, exiba um aviso
             setAviso("Pelo menos um número de telefone é inválido. Use o formato (99) 12345-6789.");
 
@@ -253,6 +254,7 @@ function Form({ handleSubmit, personData }) {
 
             <div className={styles.input_container}>
                 <InputRadio
+                    lb="Gênero"
                     name="Sexo"
                     options={options}
                     selectOption={selectedOption}
@@ -265,8 +267,8 @@ function Form({ handleSubmit, personData }) {
                     name="data_nascimento"
                     customClass="date"
                     handleOnChange={handleChange}
-                    min={calcularDataMinima()} // Adicionando a data mínima
-                    max={calcularDataMaxima()} // Adicionando a data máxima
+                    min={calcularDataMinima()} 
+                    max={calcularDataMaxima()}
                     value={formSubmitted ? "" : person.data_nascimento}
                 />
             </div>
@@ -294,12 +296,12 @@ function Form({ handleSubmit, personData }) {
                     value={formSubmitted ? "" : person.numCelular}
                 />
                 <Mask
-                    mask="(99) 99999-9999"
+                    mask="(99) 9999-9999"
                     type="tel"
                     text="Nº de Telefone Fixo"
                     name="numFixo"
                     customClass="num"
-                    placeholder="(00) 00000-0000"
+                    placeholder="(00) 0000-0000"
                     handleOnChange={handleChange}
                     value={formSubmitted ? "" : person.numFixo}
                 />
@@ -358,18 +360,18 @@ function Form({ handleSubmit, personData }) {
             </div>
 
             <div className={styles.button_container}>
-                <SubmitButton
+                <Button
                     text="Enviar"
                 />
 
-                <SubmitButton 
+                <Button 
                     text="Apagar Tudo"
                     type="button"
                     handleOnchange={handleReset}
                 />
                 
                 <Link to="/people">
-                    <SubmitButton
+                    <Button
                         text="Pessoas Cadastradas"
                     />
                 </Link>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import SubmitButton from "../form/SubmitButton";
+import Button from "../form/Button";
 
 import style from './People.module.css'
 import Card from "../project/Card";
@@ -50,7 +50,7 @@ function People() {
         <div className={style.resultado_container}>
             <div className={style.title_container}>
                 <h1>Pessoas cadastradas</h1>
-                <Link to="/"><SubmitButton text="Cadastrar"/></Link>
+                <Link to="/"><Button text="Cadastrar"/></Link>
             </div>
             {peopleMessage && (
                 <div className={style.message}>
@@ -63,6 +63,7 @@ function People() {
                         <Card
                             id={person.id}
                             nome={person.nome}
+                            sexo={person.Sexo}
                             idade={person.idade}
                             faixaEtaria={person.faixaEtaria}
                             email={person.email}
