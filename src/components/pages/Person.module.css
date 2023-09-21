@@ -34,11 +34,9 @@
 
 .numeros {
     display: flex;
+    gap: 1em;
 }
 
-.numeros p {
-    margin-right: 1.3em;
-}
 
 img{
     border-radius: 50%;
